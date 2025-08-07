@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@hono/node-server':
+        specifier: ^1.18.1
+        version: 1.18.1(hono@4.8.12)
       '@neondatabase/serverless':
         specifier: ^1.0.1
         version: 1.0.1
@@ -423,6 +426,12 @@ packages:
 
   '@hexagon/base64@1.1.28':
     resolution: {integrity: sha512-lhqDEAvWixy3bZ+UOYbPwUbBkwBq5C1LAJ/xPC8Oi+lL54oyakv/npbA0aU2hgCsx/1NUd4IBvV03+aUBWxerw==}
+
+  '@hono/node-server@1.18.1':
+    resolution: {integrity: sha512-O3puG/b7owYYmoQ2XPBf3SxBz6Dhk5VmWFhbaBU8/5wcUaXUPS0goxaI2Zfyg+Cu14ILJHEU7IFRw7miFxuXxg==}
+    engines: {node: '>=18.14.1'}
+    peerDependencies:
+      hono: ^4
 
   '@jridgewell/sourcemap-codec@1.5.4':
     resolution: {integrity: sha512-VT2+G1VQs/9oz078bLrYbecdZKs912zQlkelYpuf+SXF+QvZDYJlbx/LSx+meSAwdDFnF8FVXW92AVjjkVmgFw==}
@@ -1354,6 +1363,10 @@ snapshots:
     optional: true
 
   '@hexagon/base64@1.1.28': {}
+
+  '@hono/node-server@1.18.1(hono@4.8.12)':
+    dependencies:
+      hono: 4.8.12
 
   '@jridgewell/sourcemap-codec@1.5.4': {}
 
