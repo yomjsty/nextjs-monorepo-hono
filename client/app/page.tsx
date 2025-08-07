@@ -40,6 +40,18 @@ export default function Home() {
 					Login
 				</Link>
 			)}
+			<Link
+				className={cn(buttonVariants({ variant: 'outline' }))}
+				href="/normal"
+			>
+				Normal Route
+			</Link>
+			<Link
+				className={cn(buttonVariants({ variant: 'outline' }))}
+				href="/protected"
+			>
+				Protected Route
+			</Link>
 		</div>
 	);
 }
